@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="main">
+    <div class="main" id="home">
         <div class="navbar">
-            <img src="logo.jpeg" alt="Logo" class="logo">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" alt="Logo" class="logo">
 
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">SKILLS</a></li>
-                <li><a href="#">MY WORK</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#work">MY WORK</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
         </div>
 
@@ -29,7 +29,7 @@
                     I use HTML, CSS, JavaScript, and Bootstrap to build clean and attractive web experiences.<br>
                     I enjoy combining creativity and technology to design websites that are simple, engaging, and effective.
                 </h3>
-                <a href="#">Hire Me</a>
+                <a href="#contact">Hire Me</a>
 
                 <div class="icons">
                     <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
@@ -39,10 +39,110 @@
             </div>
 
             <div class="image">
-                <img src="boy.jpeg" alt="Profile" class="boy">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80" alt="Profile" class="boy">
             </div>
         </div>
     </div>
+
+    <section class="content-section" id="about">
+        <div class="section-heading">
+            <span>ABOUT ME</span>
+            <h2>Creative designer building modern digital experiences</h2>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-card">
+                <h3>Who I Am</h3>
+                <p>
+                    I am a web designer passionate about transforming ideas into visually striking and highly functional websites.
+                    My focus is on delivering elegant user interfaces, clean layouts, and smooth user experiences for businesses and individuals.
+                </p>
+            </div>
+
+            <div class="about-card stats-card">
+                <div>
+                    <strong>3+</strong>
+                    <span>Years Experience</span>
+                </div>
+                <div>
+                    <strong>20+</strong>
+                    <span>Projects Delivered</span>
+                </div>
+                <div>
+                    <strong>100%</strong>
+                    <span>Client Satisfaction</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section" id="skills">
+        <div class="section-heading">
+            <span>SKILLS</span>
+            <h2>Tools and technologies I work with</h2>
+        </div>
+
+        <div class="skills-grid">
+            <div class="skill-item">HTML5</div>
+            <div class="skill-item">CSS3</div>
+            <div class="skill-item">JavaScript</div>
+            <div class="skill-item">Bootstrap</div>
+            <div class="skill-item">Responsive Design</div>
+            <div class="skill-item">UI/UX Design</div>
+            <div class="skill-item">Figma</div>
+            <div class="skill-item">Web Design</div>
+        </div>
+    </section>
+
+    <section class="content-section" id="work">
+        <div class="section-heading">
+            <span>MY WORK</span>
+            <h2>Selected projects I have designed</h2>
+        </div>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80" alt="Project 1">
+                <h4>Business Landing Page</h4>
+                <p>Responsive website with modern sections and conversion-focused layout.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=900&q=80" alt="Project 2">
+                <h4>Portfolio Website</h4>
+                <p>Clean design for personal branding with clear messaging and elegant visuals.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80" alt="Project 3">
+                <h4>E-Commerce UI</h4>
+                <p>Creative storefront layout built for smooth browsing and better engagement.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section contact-section" id="contact">
+        <div class="section-heading">
+            <span>CONTACT</span>
+            <h2>Let’s build something amazing together</h2>
+        </div>
+
+        <div class="contact-box">
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p>Email: vikashdesigner@example.com</p>
+                <p>Phone: +91 98765 43210</p>
+                <p>Location: Chennai, India</p>
+            </div>
+
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
 
     <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
