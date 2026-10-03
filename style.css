@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background: #07131d;
+    color: #fff;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.7)), url('images.jpg') center/cover no-repeat;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.navbar {
+    width: 86%;
+    display: flex;
+    margin: auto;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    width: 160px;
+    cursor: pointer;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    transition: 0.4s ease;
+}
+
+ul li a:hover {
+    color: aqua;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 7% 0;
+}
+
+.info {
+    flex: 1;
+    max-width: 700px;
+}
+
+.info h1 {
+    font-size: clamp(2.5rem, 5vw, 4.1rem);
+    color: #fff;
+    margin: 16px 0;
+}
+
+.info h3 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    color: #dfeaf3;
+}
+
+.info span {
+    color: #5ce1e6;
+}
+
+.info a {
+    text-decoration: none;
+    background: #5ce1e6;
+    color: #07131d;
+    margin: 26px 0;
+    padding: 12px 22px;
+    border-radius: 10px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.info a:hover {
+    background: #a0f5ff;
+}
+
+.image {
+    width: 360px;
+    height: 480px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+    border: 4px solid rgba(92, 225, 230, 0.4);
+    transform: translateY(-20px);
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center top;
+    transition: transform 0.5s ease;
+}
+
+.image:hover .boy {
+    transform: scale(1.03);
+}
+
+.icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 22px;
+}
+
+.icons a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    transition: 0.4s ease;
+}
+
+.icons a:hover {
+    background: rgba(92, 225, 230, 0.2);
+}
+
+.icons ion-icon {
+    font-size: 34px;
+    color: #5ce1e6;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar .logo {
+        width: 120px;
+    }
+
+    ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info {
+        max-width: 100%;
+    }
+
+    .icons {
+        justify-content: center;
+    }
+
+    .image {
+        width: min(300px, 80%);
+        height: 380px;
+    }
+}
